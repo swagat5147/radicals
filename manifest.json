@@ -1,0 +1,30 @@
+
+{
+  "manifest_version": 2,
+
+  "name": "Radical",
+  "description": "Shows Desired Price",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/r-16.png",
+      "32": "images/r-32.png",
+      "48": "images/r-48.png",
+      "128": "images/r-128.png"
+    }
+  },
+  "icons": {
+    "16": "images/r-16.png",
+    "32": "images/r-32.png",
+    "48": "images/r-48.png",
+    "128": "images/r-128.png"
+  },
+ 
+  "permissions": [
+    "http://localhost/*",
+    "activeTab",
+    "tabs"
+  ]
+}
