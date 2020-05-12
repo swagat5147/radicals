@@ -21,6 +21,30 @@ while($row = mysqli_fetch_array($result,MYSQLI_ASSOC)) {
 
     //echo $email;
 }
+
+                    $mail = new PHPMailer\PHPMailer\PHPMailer();
+                    $mail->IsSMTP(); // enable SMTP
+
+                    $mail->SMTPDebug = 2;
+                    $mail->isSMTP();
+                    $mail->Host = 'smtp.gmail.com';
+                    $mail->SMTPAuth = true;
+                    $mail->SMTPSecure = 'ssl';
+                    $mail->Username = 'samantaray.asish04@gmail.com';
+                    $mail->Password = 'asishdfg';
+                    $mail->SMTPSecure = 'tls';
+                    $mail->IsHTML(true);
+                    $mail->Port = 587;
+                    $mail->SetFrom('samantaray.asish04@gmail.com');
+                    $mail->Subject = "Radical Notifier";
+                    $mail->Body = "hello, your order ".$url." and your price is ".$c_price;
+                    $mail->AddAddress($email);
+
+                    if(!$mail->Send()) {
+                      echo "Mail not Sent...";
+                    }
+
+                    echo "Mail Sent..";
 // echo $url;
 
    

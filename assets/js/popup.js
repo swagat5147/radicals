@@ -39,3 +39,4 @@ chrome.windows.getCurrent(function(window) {
 );
 
 });
+
