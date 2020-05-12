@@ -39,14 +39,21 @@ i {
     color: floralwhite !important;
 }
 
-.mycontent-left {
+@media only screen and (min-width: 768px) {
+.sidebar-container {
   border-right: 1px ridge #dedede;
 }
-
-.mycontent-right {
-    padding-left: 30px;
+  .pad {
+      padding-left: 20px;
+  }
 }
 
-.mycontent-bottom {
+@media only screen and (max-width: 767px) {
+  .sidebar-container {
+    padding-bottom: 20px;
     border-bottom: 1px ridge #dedede;
+  }
+  .pad {
+      padding-top: 20px;
+  }
 }
