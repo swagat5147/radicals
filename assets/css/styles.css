@@ -39,6 +39,11 @@ i {
     color: floralwhite !important;
 }
 
+#no-hyper {
+    color: floralwhite !important;
+    text-decoration: none !important;
+}
+
 @media only screen and (min-width: 768px) {
 .sidebar-container {
   border-right: 1px ridge #dedede;
