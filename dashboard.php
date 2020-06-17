@@ -1,3 +1,7 @@
+<?php
+    //include auth_session.php file on all user panel pages
+    include("auth_session.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,7 +23,7 @@
 
     <header class="jumbotron">
         <div class="float-right text-center align-medium">
-            <a href="login.html" target="_blank" id="no-hyper">
+            <a href="logout.php" target="_blank" id="no-hyper">
                 <i class="fa fa-sign-out fa-lg" aria-hidden="true"></i>
                 <p class="d-none d-sm-block">Logout</p>
             </a>
@@ -31,7 +35,7 @@
                     <img src="assets/images/radical.svg">
                 </div>
                 <div class="float-left">
-                    <h3>Hello, Swagat !</h3>
+                    <h3>Hello, <?php echo $_SESSION['username']; ?> !</h3>
                 </div>
             </div>
         </div>

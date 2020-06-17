@@ -1,8 +1,7 @@
 body{
-	padding-left: 30px;
-	padding-bottom: 20px;
-	padding-right: 30px;
-	font-family: arial;
+	padding: 0 30px 20px 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	background: #dae1e2;
 }
 
 img{
@@ -16,32 +15,49 @@ img{
 #url{
 
 	margin-bottom: 15px;
+	border: 1px solid #ccc;
+}
+
+#url:focus {
+    border-color:#6e8095;
+    outline: none;
 }
 
 #price{
 	width: 100%;
 	margin-bottom: 15px;
 	padding-left: 5px;
+	border: 1px solid #ccc;
 }
 
+#price:focus {
+    border-color:#6e8095;
+    outline: none;
+}
 #email{
 	width: 100%;
 	margin-bottom: 25px;
 	padding-left: 5px;
+	border: 1px solid #ccc;
+}
+
+#email:focus {
+    border-color:#6e8095;
+    outline: none;
 }
 
 button{
 	width: 100%;
 	height: 2.5rem;
 	border-radius: 4px;
-	background-color: #2f2f2f;
+	background-color: #2587f7;
 	color: floralwhite;
 	border: none;
-	font-weight: 700;
+	font-weight: 600;
 	padding-top: 1px;
 	padding-bottom: 1px;
 	transition: all 0.5s;
-
+	letter-spacing: 3px;
 }
 
 button:hover {
@@ -51,4 +67,6 @@ button:hover {
 a:link {
 	float: right;
 	font-size: 0.8em;
+	text-decoration: none;
+	color: #2587f7;
 }
